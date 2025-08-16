@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ramoa Confeitaria</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Ramoa Confeitaria — docinhos, brigadeiros, mini bolos e bolos grandes. Fundada por Márcia em 22 de julho de 2024." />
+  <style>
+    /* Suaviza a rolagem do carrossel */
+    .scroll-smooth { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-pink-100 via-yellow-100 to-green-100 text-gray-900">
+  <header class="text-center px-6 pt-10 pb-8">
+    <h1 class="text-5xl font-extrabold text-pink-600 drop-shadow-md">Ramoa Confeitaria</h1>
+    <p class="text-lg text-gray-700 mt-2">Doces que trazem felicidade ✨</p>
+    <p class="text-md text-gray-700 mt-2">Fundada em <strong>22 de julho de 2024</strong> por <strong>Márcia</strong></p>
+    <p class="text-md text-gray-700 mt-1">
+      Siga no Instagram:
+      <a href="https://instagram.com/confeitaria_ramoa" target="_blank" rel="noreferrer" class="font-bold text-pink-600 hover:underline">@confeitaria_ramoa</a>
+    </p>
+  </header>
+
+  <!-- Galeria / Carrossel horizontal -->
+  <section class="max-w-6xl mx-auto px-6">
+    <div class="flex items-center justify-between mb-3">
+      <h2 class="text-3xl font-bold text-pink-600">Nossas delícias 🍬</h2>
+      <div class="hidden md:flex gap-2">
+        <button id="prev" class="px-3 py-2 rounded-xl border bg-white shadow hover:shadow-md">◀</button>
+        <button id="next" class="px-3 py-2 rounded-xl border bg-white shadow hover:shadow-md">▶</button>
+      </div>
+    </div>
+
+    <div id="carousel" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4">
+      <figure class="min-w-[280px] md:min-w-[360px] snap-center rounded-2xl overflow-hidden border-2 border-pink-200 bg-white shadow">
+        <img src="https://i.postimg.cc/9fGSd0HB/Imagem-do-Whats-App-de-2025-08-16-s-01-13-31-bc2a9825.jpg" alt="Bolo decorado" class="w-full h-72 object-cover">
+        <figcaption class="text-center py-3 font-semibold text-gray-700">Bolo decorado</figcaption>
+      </figure>
+      <figure class="min-w-[280px] md:min-w-[360px] snap-center rounded-2xl overflow-hidden border-2 border-pink-200 bg-white shadow">
+        <img src="https://i.postimg.cc/BQVdsRC2/Imagem-do-Whats-App-de-2025-08-16-s-01-13-58-e6783b18.jpg" alt="Brigadeiros gourmet" class="w-full h-72 object-cover">
+        <figcaption class="text-center py-3 font-semibold text-gray-700">Bolo infantil</figcaption>
+      </figure>
+      <figure class="min-w-[280px] md:min-w-[360px] snap-center rounded-2xl overflow-hidden border-2 border-pink-200 bg-white shadow">
+        <img src="https://i.postimg.cc/D0DBk3KZ/Imagem-do-Whats-App-de-2025-08-16-s-01-14-24-e2a60b93.jpg" alt="Mini bolos" class="w-full h-72 object-cover">
+        <figcaption class="text-center py-3 font-semibold text-gray-700">logo da confeitaria</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- O que fazemos -->
+  <section class="max-w-4xl mx-auto mt-12 px-6 text-center">
+    <h2 class="text-3xl font-bold text-pink-600 mb-4">O que fazemos 🍰</h2>
+    <p class="text-lg leading-relaxed text-gray-800">
+      A <strong>Ramoa Confeitaria</strong> é especializada em <strong>docinhos artesanais</strong> como brigadeiros,
+      além de <strong>mini bolos</strong> e <strong>bolos grandes</strong> para festas e ocasiões especiais.
+    </p>
+  </section>
+
+  <!-- Feedbacks -->
+  <section class="max-w-6xl mx-auto mt-12 px-6">
+    <h2 class="text-3xl font-bold text-pink-600 mb-6 text-center">Feedback dos Clientes 💬</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="rounded-2xl shadow border-2 border-yellow-200 bg-white p-6 text-center">
+        <p class="italic mb-4">“Os brigadeiros são maravilhosos, derretem na boca!”</p>
+        <p class="font-bold text-pink-600">- Rosa</p>
+      </div>
+      <div class="rounded-2xl shadow border-2 border-yellow-200 bg-white p-6 text-center">
+        <p class="italic mb-4">“Os bolos grandes ficaram perfeitos na minha festa, parabéns!”</p>
+        <p class="font-bold text-pink-600">- João</p>
+      </div>
+      <div class="rounded-2xl shadow border-2 border-yellow-200 bg-white p-6 text-center">
+        <p class="italic mb-4">“Os docinhos são feitos com muito carinho e qualidade, adorei!”</p>
+        <p class="font-bold text-pink-600">- Palmira</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <footer class="mt-16 text-center px-6 pb-12">
+    <p class="text-lg mb-4">Entre em contato e faça sua encomenda:</p>
+    <div class="flex items-center justify-center gap-3 mb-6">
+      <span id="phone" class="font-extrabold text-pink-600 text-xl">55 21 98367 7165</span>
+      <button id="copy" class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-2xl shadow">Copiar número</button>
+      <a href="https://wa.me/5521983677165" target="_blank" rel="noreferrer" class="px-4 py-2 rounded-2xl border shadow bg-white hover:shadow-md">Enviar WhatsApp</a>
+    </div>
+    <p class="text-sm text-gray-700">© <span id="year"></span> Ramoa Confeitaria — feito com carinho 💖</p>
+  </footer>
+
+  <script>
+    // Atualiza ano automaticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Copiar número
+    const phone = '55 21 98367 7165';
+    document.getElementById('copy').addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(phone);
+        alert('Número copiado!');
+      } catch (e) {
+        alert('Não foi possível copiar. Tente selecionar e copiar manualmente.');
+      }
+    });
+
+    // Navegação do carrossel (desktop)
+    const carousel = document.getElementById('carousel');
+    document.getElementById('prev').addEventListener('click', () => {
+      carousel.scrollBy({ left: -350, behavior: 'smooth' });
+    });
+    document.getElementById('next').addEventListener('click', () => {
+      carousel.scrollBy({ left: 350, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
